@@ -1,0 +1,7 @@
+applications:
+- name: service-broker-app-api
+  memory: 1G 
+  instances: 1
+  path: build/libs/server-0.0.1-SNAPSHOT.jar
+  buildpacks:
+    - java_buildpack_offline
