@@ -46,7 +46,7 @@ public class DefaultUserRepositoryTest {
 
     @Test
     public void return_value_of_getAll_method_are_correct() {
-        List<User> userList = asList(new User("p-0001", "marthin"));
+        List<User> userList = asList(new User("p-0001", "martin"));
         Mockito.when(jdbcOperations.query(anyString(), any(RowMapper.class))).thenReturn(userList);
 
 
